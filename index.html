@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLISSBLOOM STUDIO & LAB - Elegance Blooming at Your Fingertips</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS v3 via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'bb-bg': '#F4F2E0',
+                        'bb-pink': '#F3D5CF',
+                        'bb-taupe': '#CCC3C0',
+                        'bb-gray': '#A5ABAB',
+                        'bb-dark': '#2B2D2F',
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .sparkle-icon {
+            filter: drop-shadow(0px 0px 3px rgba(243, 213, 207, 0.8));
+        }
+    </style>
+</head>
+<body class="bg-bb-bg text-bb-dark font-sans antialiased selection:bg-bb-pink selection:text-bb-dark">
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="sticky top-0 z-50 bg-bb-bg/90 backdrop-blur-md border-b border-bb-taupe/40 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Logo Blissbloom -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="relative w-10 h-10 rounded-full bg-bb-pink/60 flex items-center justify-center font-serif text-lg font-bold text-bb-dark border border-bb-taupe/50 group-hover:bg-bb-pink transition">
+                    BB
+                    <span class="absolute -top-1 -right-1 text-xs text-yellow-500 sparkle-icon">✦</span>
+                    <span class="absolute -bottom-1 -left-1 text-xs text-bb-pink sparkle-icon">✨</span>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-serif text-xl tracking-wider font-semibold lowercase leading-none text-bb-dark">blissbloom</span>
+                    <span class="text-[9px] tracking-[0.2em] text-bb-dark/60 uppercase font-medium mt-1">Studio & Lab</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-bb-dark/80">
+                <a href="#about" class="hover:text-bb-dark transition">Tentang Kami</a>
+                <a href="#catalogue" class="hover:text-bb-dark transition">Katakana Series</a>
+                <a href="#services" class="hover:text-bb-dark transition">Layanan & Harga</a>
+                <a href="#location" class="hover:text-bb-dark transition">Lokasi</a>
+                <a href="#contact" class="hover:text-bb-dark transition">Kontak</a>
+            </nav>
+
+            <!-- CTA Button Navbar -->
+            <div class="hidden md:block">
+                <a href="https://wa.me/6281371919705?text=Halo%20Blissbloom%20Studio,%20saya%20ingin%20book%20appointment" target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 bg-bb-pink hover:bg-bb-pink/80 text-bb-dark font-medium text-sm rounded-full border border-bb-taupe/50 transition duration-300 shadow-sm hover:shadow">
+                    <i class="fab font-normal fa-whatsapp"></i> Book Appointment
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="menu-btn" class="md:hidden text-bb-dark focus:outline-none p-2" aria-label="Toggle Navigation">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-bb-bg border-b border-bb-taupe px-4 pt-2 pb-6 space-y-3">
+            <a href="#about" class="block py-2 text-sm font-medium border-b border-bb-taupe/20">Tentang Kami</a>
+            <a href="#catalogue" class="block py-2 text-sm font-medium border-b border-bb-taupe/20">Katakana Series</a>
+            <a href="#services" class="block py-2 text-sm font-medium border-b border-bb-taupe/20">Layanan & Harga</a>
+            <a href="#location" class="block py-2 text-sm font-medium border-b border-bb-taupe/20">Lokasi</a>
+            <a href="#contact" class="block py-2 text-sm font-medium border-b border-bb-taupe/20">Kontak</a>
+            <a href="https://wa.me/6281371919705?text=Halo%20Blissbloom%20Studio,%20saya%20ingin%20book%20appointment" target="_blank" class="inline-flex items-center justify-center gap-2 w-full py-3 mt-2 bg-bb-pink text-bb-dark font-medium text-sm rounded-full border border-bb-taupe">
+                <i class="fab fa-whatsapp"></i> Book Appointment
+            </a>
+        </div>
+    </header>
+
+    <!-- ================= HERO SECTION ================= -->
+    <section class="relative py-20 lg:py-32 overflow-hidden border-b border-bb-taupe/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <span class="inline-block px-4 py-1.5 mb-6 text-xs font-semibold tracking-widest text-bb-dark/70 uppercase bg-bb-pink/40 rounded-full border border-bb-taupe/40">
+                Elegance Blooming at Your Fingertips.
+            </span>
+            
+            <h1 class="font-serif text-3xl md:text-5xl lg:text-6xl font-normal leading-tight max-w-4xl mx-auto mb-6">
+                Sentuhan Mewah ala Meguro Studio: <br class="hidden sm:inline">
+                <span class="italic font-light">Kuku Cantik, Sehat, dan Berkelas Tanpa Kompromi.</span>
+            </h1>
+
+            <p class="text-base md:text-lg text-bb-dark/75 max-w-2xl mx-auto mb-10 leading-relaxed">
+                Menggabungkan estetika Jepang yang anggun dengan formula nutrisi gel polish tercanggih dari Tokyo.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="https://wa.me/6281371919705?text=Halo%20Blissbloom,%20saya%20ingin%20reservasi%20studio" target="_blank" class="w-full sm:w-auto px-8 py-3.5 bg-bb-pink hover:bg-[#ebd0c8] text-bb-dark font-medium rounded-full border border-bb-taupe shadow-sm transition duration-300">
+                    Reservasi Studio
+                </a>
+                <a href="#catalogue" class="w-full sm:w-auto px-8 py-3.5 bg-transparent hover:bg-white/40 text-bb-dark font-medium rounded-full border border-bb-taupe transition duration-300">
+                    Lihat Katalogue Produk
+                </a>
+            </div>
+        </div>
+        
+        <!-- Subtle Decorative Background Elements -->
+        <div class="absolute top-1/2 left-10 -translate-y-1/2 w-64 h-64 bg-bb-pink/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute top-1/3 right-10 -translate-y-1/2 w-80 h-80 bg-bb-gray/20 rounded-full blur-3xl pointer-events-none"></div>
+    </section>
+
+    <!-- ================= VALUE PROPOSITION / USP ================= -->
+    <section id="about" class="py-20 bg-white/40 border-b border-bb-taupe/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="font-serif text-3xl text-bb-dark mb-3">Kenapa Memilih Blissbloom?</h2>
+                <div class="w-12 h-0.5 bg-bb-taupe mx-auto mb-4"></div>
+                <p class="text-sm text-bb-dark/70">Perpaduan inovasi sains laboratorium nail-care dan seni estetika minimalis Jepang.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- USP 1 -->
+                <div class="p-8 rounded-2xl bg-bb-bg/60 border border-bb-taupe/40 hover:border-bb-pink transition duration-300">
+                    <div class="w-12 h-12 rounded-full bg-bb-pink/40 flex items-center justify-center text-bb-dark mb-6">
+                        <i class="fas fa-vial"></i>
+                    </div>
+                    <h3 class="font-serif text-lg font-semibold mb-2">Vitamin-Infused</h3>
+                    <p class="text-xs text-bb-dark/70 leading-relaxed">Diperkaya Vitamin E, B5, dan Biotin untuk menjaga kuku tetap kuat, terhidrasi, dan sehat walau menggunakan gel polish berkali-kali.</p>
+                </div>
+
+                <!-- USP 2 -->
+                <div class="p-8 rounded-2xl bg-bb-bg/60 border border-bb-taupe/40 hover:border-bb-pink transition duration-300">
+                    <div class="w-12 h-12 rounded-full bg-bb-pink/40 flex items-center justify-center text-bb-dark mb-6">
+                        <i class="fas fa-shield-cat"></i>
+                    </div>
+                    <h3 class="font-serif text-lg font-semibold mb-2">10-Free & HEMA-Free</h3>
+                    <p class="text-xs text-bb-dark/70 leading-relaxed">Formulasi hypoallergenic aman bebas dari bahan kimia berbahaya. Sangat ramah untuk pemilik kulit sensitif.</p>
+                </div>
+
+                <!-- USP 3 -->
+                <div class="p-8 rounded-2xl bg-bb-bg/60 border border-bb-taupe/40 hover:border-bb-pink transition duration-300">
+                    <div class="w-12 h-12 rounded-full bg-bb-pink/40 flex items-center justify-center text-bb-dark mb-6">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="font-serif text-lg font-semibold mb-2">Ethical Beauty</h3>
+                    <p class="text-xs text-bb-dark/70 leading-relaxed">100% Cruelty-Free & Vegan. Kami berkomitmen menciptakan kecantikan tanpa menyakiti mahluk hidup lain.</p>
+                </div>
+
+                <!-- USP 4 -->
+                <div class="p-8 rounded-2xl bg-bb-bg/60 border border-bb-taupe/40 hover:border-bb-pink transition duration-300">
+                    <div class="w-12 h-12 rounded-full bg-bb-pink/40 flex items-center justify-center text-bb-dark mb-6">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3 class="font-serif text-lg font-semibold mb-2">Professional Grade</h3>
+                    <p class="text-xs text-bb-dark/70 leading-relaxed">Konsistensi high-pigment, kemudahan self-leveling, dan daya tahan ekstra tahan lama tanpa mudah mengelupas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PRODUCT CATALOGUE ================= -->
+    <section id="catalogue" class="py-20 border-b border-bb-taupe/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs uppercase tracking-widest text-bb-dark/60 font-medium">Gel Polish Collection (15ml)</span>
+                <h2 class="font-serif text-3xl md:text-4xl text-bb-dark mt-2 mb-3">Katakana Series</h2>
+                <div class="w-12 h-0.5 bg-bb-taupe mx-auto"></div>
+            </div>
+
+            <!-- Tab Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-2 mb-12">
+                <button onclick="filterCategory('all')" class="tab-btn px-5 py-2 text-xs font-medium rounded-full bg-bb-dark text-white transition" data-category="all">Semua</button>
+                <button onclick="filterCategory('petal')" class="tab-btn px-5 py-2 text-xs font-medium rounded-full bg-white/60 border border-bb-taupe text-bb-dark hover:bg-bb-pink/40 transition" data-category="petal">Petal & Rain Series</button>
+                <button onclick="filterCategory('meguro')" class="tab-btn px-5 py-2 text-xs font-medium rounded-full bg-white/60 border border-bb-taupe text-bb-dark hover:bg-bb-pink/40 transition" data-category="meguro">Meguro Atmosphere Series</button>
+                <button onclick="filterCategory('twilight')" class="tab-btn px-5 py-2 text-xs font-medium rounded-full bg-white/60 border border-bb-taupe text-bb-dark hover:bg-bb-pink/40 transition" data-category="twilight">Twilight & Accent Series</button>
+            </div>
+
+            <!-- Catalogue Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- BB-01 -->
+                <div class="product-item petal bg-white/50 rounded-2xl p-6 border border-bb-taupe/40 hover:shadow-lg transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="px-3 py-1 bg-bb-pink/50 text-[10px] font-semibold tracking-wider text-bb-dark uppercase rounded-full">Petal & Rain</span>
+                            <span class="text-xs font-mono text-bb-dark/50">BB-01</span>
+                        </div>
+                        <div class="h-32 rounded-xl mb-4 bg-gradient-to-r from-[#ffd3dc] via-[#fce4e8] to-[#f3d5cf] flex items-center justify-center border border-bb-taupe/20">
+                            <span class="text-2xl opacity-60">✨</span>
+                        </div>
+                        <h3 class="font-serif text-xl font-bold text-bb-dark mb-1">サクラレイン</h3>
+                        <p class="text-xs font-medium text-bb-dark/60 mb-3">(Sakura Rein)</p>
+                        <p class="text-xs text-bb-dark/80 mb-6 leading-relaxed">Pink pastel lembut sheer dengan micro shimmer perak yang elegan.</p>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-bb-taupe/20">
+                        <div>
+                            <span class="text-xs font-semibold text-bb-dark block">¥2.200</span>
+                            <span class="text-[11px] text-bb-dark/60">~Rp235.000</span>
+                        </div>
+                        <a href="https://wa.me/6281371919705?text=Halo%20Blissbloom,%20saya%20ingin%20pesan%20BB-01%20Sakura%20Rein" target="_blank" class="px-4 py-2 bg-bb-bg hover:bg-bb-pink text-xs font-medium text-bb-dark rounded-lg border border-bb-taupe transition">Pesan</a>
+                    </div>
+                </div>
+
+                <!-- BB-02 -->
+                <div class="product-item petal bg-white/50 rounded-2xl p-6 border border-bb-taupe/40 hover:shadow-lg transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="px-3 py-1 bg-bb-pink/50 text-[10px] font-semibold tracking-wider text-bb-dark uppercase rounded-full">Petal & Rain</span>
+                            <span class="text-xs font-mono text-bb-dark/50">BB-02</span>
+                        </div>
+                        <div class="h-32 rounded-xl mb-4 bg-gradient-to-r from-[#d8b4bc] to-[#c49ea7] flex items-center justify-center border border-bb-taupe/20"></div>
+                        <h3 class="font-serif text-xl font-bold text-bb-dark mb-1">ミスティブロッサム</h3>
+                        <p class="text-xs font-medium text-bb-dark/60 mb-3">(Misutī Burossamu)</p>
+                        <p class="text-xs text-bb-dark/80 mb-6 leading-relaxed">Dusting mauve pink keunguan dengan kesan dreamy dan manis.</p>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-bb-taupe/20">
+                        <div>
+                            <span class="text-xs font-semibold text-bb-dark block">¥2.200</span>
+                            <span class="text-[11px] text-bb-dark/60">~Rp235.000</span>
+                        </div>
+                        <a href="https://wa.me/6281371919705?text=Halo%20Blissbloom,%20saya%20ingin%20pesan%20BB-02%20Misuti%20Burossamu" target="_blank" class="px-4 py-2 bg-bb-bg hover:bg-bb-pink text-xs font-medium text-bb-dark rounded-lg border border-bb-taupe transition">Pesan</a>
+                    </div>
+                </div>
+
+                <!-- BB-03 -->
+                <div class="product-item petal bg-white/50 rounded-2xl p-6 border border-bb-taupe/40 hover:shadow-lg transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="px-3 py-1 bg-bb-pink/50 text-[10px] font-semibold tracking-wider text-bb-dark uppercase rounded-full">Petal & Rain</span>
+                            <span class="text-xs font-mono text-bb-dark/50">BB-03</span>
+                        </div>
+                        <div class="h-32 rounded-xl mb-4 bg-gradient-to-r from-[#f7a8b8]/80 to-[#f392a5]/80 flex items-center justify-center border border-bb-taupe/20"></div>
+                        <h3 class="font-serif text-xl font-bold text-bb-dark mb-1">デューイーペタル</h3>
+                        <p class="text-xs font-medium text-bb-dark/60 mb-3">(Dyūī Petaru)</p>
+                        <p class="text-xs text-bb-dark/80 mb-6 leading-relaxed">Coral pink syrup-gel finish yang memberikan efek kuku sehat merona.</p>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-bb-taupe/20">
+                        <div>
+                            <span class="text-xs font-semibold text-bb-dark block">¥2.200</span>
+                            <span class="text-[11px] text-bb-dark/60">~Rp235.000</span>
+                        </div>
+                        <a href="https://wa.me/6281371919705?text=Halo%20Blissbloom,%20saya%20ingin%20pesan%20BB-03%20Dyui%20Petaru" target="_blank" class="px-4 py-2 bg-bb-bg hover:bg-bb-pink text-xs font-medium text-bb-dark rounded-lg border border-bb-taupe transition">Pesan</a>
+                    </div>
+                </div>
+
+                <!-- BB-04 -->
+                <div class="product-item meguro bg-white/50 rounded-2xl p-6 border border-bb-taupe/40 hover:shadow-lg transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="px-3 py-1 bg-bb-gray/40 text-[10px] font-semibold tracking-wider text-bb-dark uppercase rounded-full">Meguro Atmosphere</span>
+                            <span class="text-xs font-mono text-bb-dark/50">BB-04</span>
+                        </div>
+                        <div class="h-32 rounded-xl mb-4 bg-[#b2c0ac] flex items-center justify-center border border-bb-taupe/20"></div>
+                        <h3 class="font-serif text-xl font-bold text-bb-dark mb-1">リバーバンクモス</h3>
+                        <p class="text-xs font-medium text-bb-dark/60 mb-3">(Ribābanku Mosu)</p>
+                        <p class="text-xs text-bb-dark/80 mb-6 leading-relaxed">Hijau sage/olive muda krem yang menenangkan dan estetis.</p>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-bb-taupe/20">
+                        <div>
+                            <span class="text-xs font-semibold text-bb-dark block">¥2.200</span>
+                            <span class="text-[11px] text-bb-dark/60">~Rp235.000</span>
+                        </div>
+                        <a href="https://wa.me/6281371919705?text=Halo%20Blissbloom,%20saya%20ingin%20pesan%20BB-04%20Ribabanku%20Mosu" target="_blank" class="px-4 py-2 bg-bb-bg hover:bg-bb-pink text-xs font-medium text-bb-dark rounded-lg border border-bb-taupe transition">Pesan</a>
+                    </div>
+                </div>
+
+                <!-- BB-05 -->
+                <div class="product-item meguro bg-white/50 rounded-2xl p-6 border border-bb-taupe/40 hover:shadow-lg transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="px-3 py-1 bg-bb-gray/40 text-[10px] font-semibold tracking-wider text-bb-dark uppercase rounded-full">Meguro Atmosphere</span>
+                            <span class="text-xs font-mono text-bb-dark/50">BB-05</span>
+                        </div>
+                        <div class="h-32 rounded-xl mb-4 bg-[#8b9bb4] flex items-center justify-center border border-bb-taupe/20"></div>
+                        <h3 class="font-serif text-xl font-bold text-bb-dark mb-1">レイニーペーブメント</h3>
+                        <p class="text-xs font-medium text-bb-dark/60 mb-3">(Reinī Pēbumento)</p>
+                        <p class="text-xs text-bb-dark/80 mb-6 leading-relaxed">Abu-abu kebiruan cool-toned slate gray yang modern.</p>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-bb-taupe/20">
+                        <div>
+                            <span class="text-xs font-semibold text-bb-dark block">¥2.200</span>
+                            <span class="text-[11px] text-bb-dark/60">~Rp235.000</span>
+                        </div>
+                        <a href="https://wa.me/6281371919705?text=Halo%20Blissbloom,%20saya%20ingin%20pesan%20BB-05%20Reini%20Pebumento" target="_blank" class="px-4 py-2 bg-bb-bg hover:bg-bb-pink text-xs font-medium text-bb-dark rounded-lg border border-bb-taupe transition">Pesan</a>
+                    </div>
+                </div>
+
+                <!-- BB-06 -->
+                <div class="product-item meguro bg-white/50 rounded-2xl p-6 border border-bb-taupe/40 hover:shadow-lg transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="px-3 py-1 bg-bb-gray/40 text-[10px] font-semibold tracking-wider text-bb-dark uppercase rounded-full">Meguro Atmosphere</span>
+                            <span class="text-xs font-mono text-bb-dark/50">BB-06</span>
+                        </div>
+                        <div class="h-32 rounded-xl mb-4 bg-white/80 border border-bb-taupe/30 flex items-center justify-center">
+                            <span class="text-xs text-bb-dark/40">Milky</span>
+                        </div>
+                        <h3 class="font-serif text-xl font-bold text-bb-dark mb-1">キャナルフォグ</h3>
+                        <p class="text-xs font-medium text-bb-dark/60 mb-3">(Kyanaru Fogu)</p>
+                        <p class="text-xs text-bb-dark/80 mb-6 leading-relaxed">Putih susu transparan (milky white) yang bersih dan subtle.</p>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-bb-taupe/20">
+                        <div>
+                            <span class="text-xs font-semibold text-bb-dark block">¥2.200</span>
+                            <span class="text-[11px] text-bb-dark/60">~Rp235.000</span>
+                        </div>
+                        <a href="https://wa.me/6281371919705?text=Halo%20Blissbloom,%20saya%20ingin%20pesan%20BB-06%20Kyanaru%20Fogu" target="_blank" class="px-4 py-2 bg-bb-bg hover:bg-bb-pink text-xs font-medium text-bb-dark rounded-lg border border-bb-taupe transition">Pesan</a>
+                    </div>
+                </div>
+
+                <!-- BB-07 -->
+                <div class="product-item twilight bg-white/50 rounded-2xl p-6 border border-bb-taupe/40 hover:shadow-lg transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="px-3 py-1 bg-bb-taupe/40 text-[10px] font-semibold tracking-wider text-bb-dark uppercase rounded-full">Twilight & Accent</span>
+                            <span class="text-xs font-mono text-bb-dark/50">BB-07</span>
+                        </div>
+                        <div class="h-32 rounded-xl mb-4 bg-[#d8beac] flex items-center justify-center border border-bb-taupe/20"></div>
+                        <h3 class="font-serif text-xl font-bold text-bb-dark mb-1">シンジュクドリズル</h3>
+                        <p class="text-xs font-medium text-bb-dark/60 mb-3">(Shinjuku Dorizuru)</p>
+                        <p class="text-xs text-bb-dark/80 mb-6 leading-relaxed">Nude beige hangat full coverage untuk tampilan timeless.</p>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-bb-taupe/20">
+                        <div>
+                            <span class="text-xs font-semibold text-bb-dark block">¥2.200</span>
+                            <span class="text-[11px] text-bb-dark/60">~Rp235.000</span>
+                        </div>
+                        <a href="https://wa.me/6281371919705?text=Halo%20Blissbloom,%20saya%20ingin%20pesan%20BB-07%20Shinjuku%20Dorizuru" target="_blank" class="px-4 py-2 bg-bb-bg hover:bg-bb-pink text-xs font-medium text-bb-dark rounded-lg border border-bb-taupe transition">Pesan</a>
+                    </div>
+                </div>
+
+                <!-- BB-08 -->
+                <div class="product-item twilight bg-white/50 rounded-2xl p-6 border border-bb-taupe/40 hover:shadow-lg transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="px-3 py-1 bg-bb-taupe/40 text-[10px] font-semibold tracking-wider text-bb-dark uppercase rounded-full">Twilight & Accent</span>
+                            <span class="text-xs font-mono text-bb-dark/50">BB-08</span>
+                        </div>
+                        <div class="h-32 rounded-xl mb-4 bg-[#633a48] flex items-center justify-center border border-bb-taupe/20"></div>
+                        <h3 class="font-serif text-xl font-bold text-bb-dark mb-1">トウキョウダスク</h3>
+                        <p class="text-xs font-medium text-bb-dark/60 mb-3">(Tōkyō Dasuku)</p>
+                        <p class="text-xs text-bb-dark/80 mb-6 leading-relaxed">Plum berry gelap mauve deep yang mewah dan penuh pesona.</p>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-bb-taupe/20">
+                        <div>
+                            <span class="text-xs font-semibold text-bb-dark block">¥2.200</span>
+                            <span class="text-[11px] text-bb-dark/60">~Rp235.000</span>
+                        </div>
+                        <a href="https://wa.me/6281371919705?text=Halo%20Blissbloom,%20saya%20ingin%20pesan%20BB-08%20Tokyo%20Dasuku" target="_blank" class="px-4 py-2 bg-bb-bg hover:bg-bb-pink text-xs font-medium text-bb-dark rounded-lg border border-bb-taupe transition">Pesan</a>
+                    </div>
+                </div>
+
+                <!-- BB-09 -->
+                <div class="product-item twilight bg-white/50 rounded-2xl p-6 border border-bb-taupe/40 hover:shadow-lg transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="px-3 py-1 bg-bb-taupe/40 text-[10px] font-semibold tracking-wider text-bb-dark uppercase rounded-full">Twilight & Accent</span>
+                            <span class="text-xs font-mono text-bb-dark/50">BB-09</span>
+                        </div>
+                        <div class="h-32 rounded-xl mb-4 bg-gradient-to-r from-[#e6ca65] via-[#f7e8a4] to-[#d4af37] flex items-center justify-center border border-bb-taupe/20">
+                            <span class="text-2xl text-white">✨</span>
+                        </div>
+                        <h3 class="font-serif text-xl font-bold text-bb-dark mb-1">ゴールデンブルーム</h3>
+                        <p class="text-xs font-medium text-bb-dark/60 mb-3">(Gōrudun Burūmu)</p>
+                        <p class="text-xs text-bb-dark/80 mb-6 leading-relaxed">Champagne gold glitter cair mewah untuk aksen berkilau sempurna.</p>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-bb-taupe/20">
+                        <div>
+                            <span class="text-xs font-semibold text-bb-dark block">¥2.400</span>
+                            <span class="text-[11px] text-bb-dark/60">~Rp255.000</span>
+                        </div>
+                        <a href="https://wa.me/6281371919705?text=Halo%20Blissbloom,%20saya%20ingin%20pesan%20BB-09%20Gorudun%20Burumu" target="_blank" class="px-4 py-2 bg-bb-bg hover:bg-bb-pink text-xs font-medium text-bb-dark rounded-lg border border-bb-taupe transition">Pesan</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= SERVICES & ESSENTIALS ================= -->
+    <section id="services" class="py-20 bg-white/30 border-b border-bb-taupe/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs uppercase tracking-widest text-bb-dark/60 font-medium">Menu & Pricelist</span>
+                <h2 class="font-serif text-3xl md:text-4xl text-bb-dark mt-2 mb-3">Studio Services & Essentials</h2>
+                <div class="w-12 h-0.5 bg-bb-taupe mx-auto"></div>
+            </div>
+
+            <!-- Guarantee Banner -->
+            <div class="mb-12 bg-bb-pink/40 border border-bb-pink rounded-2xl p-6 text-center max-w-3xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-4">
+                <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-bb-dark shrink-0">
+                    <i class="fas fa-shield-alt text-lg"></i>
+                </div>
+                <div class="text-left">
+                    <h4 class="font-serif font-bold text-bb-dark">Garansi Free Retouch 7 Hari</h4>
+                    <p class="text-xs text-bb-dark/70">Jaminan kepuasan pengerjaan studio. Jika gel mengelupas atau merusak bentuk dalam 7 hari, kami retouch gratis!</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                
+                <!-- Studio Services -->
+                <div class="bg-bb-bg/80 border border-bb-taupe/40 rounded-2xl p-8">
+                    <h3 class="font-serif text-2xl font-semibold mb-6 flex items-center gap-3">
+                        <i class="fas fa-sparkles text-sm text-bb-dark/50"></i> Studio Treatment
+                    </h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex justify-between items-start pb-4 border-b border-bb-taupe/30">
+                            <div>
+                                <h4 class="font-medium text-base">Express Japanese Gel Manicure</h4>
+                                <p class="text-xs text-bb-dark/60 mt-1">Perawatan kuku dasar dan aplikasi single-color pilihan.</p>
+                            </div>
+                            <div class="text-right shrink-0">
+                                <span class="font-semibold text-sm block">¥6.500</span>
+                                <span class="text-[11px] text-bb-dark/60">~Rp690.000</span>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-between items-start pb-4 border-b border-bb-taupe/30">
+                            <div>
+                                <h4 class="font-medium text-base">Custom Hand-Painted Gel Art</h4>
+                                <p class="text-xs text-bb-dark/60 mt-1">Seni kuku lukis tangan kustom sesuai permintaan Anda.</p>
+                            </div>
+                            <div class="text-right shrink-0">
+                                <span class="font-semibold text-sm block">¥9.500 – ¥12.000</span>
+                                <span class="text-[11px] text-bb-dark/60">~Rp1.000.000 – Rp1.280.000</span>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-between items-start pb-4 border-b border-bb-taupe/30">
+                            <div>
+                                <h4 class="font-medium text-base flex items-center gap-2">
+                                    Blissbloom Signature Sakura Art (3D)
+                                    <span class="text-[10px] bg-bb-pink px-2 py-0.5 rounded-full font-sans font-normal">Best</span>
+                                </h4>
+                                <p class="text-xs text-bb-dark/60 mt-1">Desain signature 3D Bunga Sakura khas Blissbloom Studio.</p>
+                            </div>
+                            <div class="text-right shrink-0">
+                                <span class="font-semibold text-sm block">¥15.000</span>
+                                <span class="text-[11px] text-bb-dark/60">~Rp1.600.000</span>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h4 class="font-medium text-base">Nail Spa & Vitamin Recovery Treatment</h4>
+                                <p class="text-xs text-bb-dark/60 mt-1">Perawatan nutrisi intensif untuk mengembalikan kekuatan kuku.</p>
+                            </div>
+                            <div class="text-right shrink-0">
+                                <span class="font-semibold text-sm block">¥5.000</span>
+                                <span class="text-[11px] text-bb-dark/60">~Rp530.000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nail Care Essentials -->
+                <div class="bg-bb-bg/80 border border-bb-taupe/40 rounded-2xl p-8 flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-serif text-2xl font-semibold mb-6 flex items-center gap-3">
+                            <i class="fas fa-[#8b9bb4] fa-pump-soap text-sm text-bb-dark/50"></i> Nail Care Essentials
+                        </h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex justify-between items-start pb-4 border-b border-bb-taupe/30">
+                                <div>
+                                    <h4 class="font-medium text-base">Vitamin Cuticle Serum Oil (30ml)</h4>
+                                    <p class="text-xs text-bb-dark/60 mt-1">Formula serum khusus melembabkan kutikula & memperkuat kuku.</p>
+                                </div>
+                                <div class="text-right shrink-0">
+                                    <span class="font-semibold text-sm block">¥1.800</span>
+                                    <span class="text-[11px] text-bb-dark/60">~Rp190.000</span>
+                                </div>
+                            </div>
+
+                            <div class="flex justify-between items-start pb-4 border-b border-bb-taupe/30">
+                                <div>
+                                    <h4 class="font-medium text-base">Artisan Fine Brush Set (5 Kuas)</h4>
+                                    <p class="text-xs text-bb-dark/60 mt-1">Set kuas profesional untuk detail nail art presisi tinggi.</p>
+                                </div>
+                                <div class="text-right shrink-0">
+                                    <span class="font-semibold text-sm block">¥3.500</span>
+                                    <span class="text-[11px] text-bb-dark/60">~Rp370.000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 pt-6 border-t border-bb-taupe/30 text-center">
+                        <a href="https://wa.me/6281371919705?text=Halo%20Blissbloom,%20saya%20ingin%20tanya%20mengenai%20layanan%20dan%20produk" target="_blank" class="inline-block w-full py-3 bg-bb-dark text-white rounded-xl text-xs font-medium hover:bg-bb-dark/90 transition">
+                            Konsultasi Perawatan Via WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= LOCATION & ATMOSPHERE ================= -->
+    <section id="location" class="py-20 border-b border-bb-taupe/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                
+                <div>
+                    <span class="text-xs uppercase tracking-widest text-bb-dark/60 font-medium block mb-2">Meguro Flagship Studio</span>
+                    <h2 class="font-serif text-3xl md:text-4xl text-bb-dark mb-6">Suasana Khas Tokyo di Tepi Sungai Meguro</h2>
+                    
+                    <p class="text-sm text-bb-dark/80 leading-relaxed mb-6">
+                        Studio kami dirancang untuk memberikan ketenangan sempurna. Menawarkan pemandangan menakjubkan tepi Sungai Meguro dengan nuansa tenang khas hujan gerimis musim gugur Jepang (Tsuyu). Nikmati momen relaksasi terbaik sembari mempercantik kuku Anda.
+                    </p>
+
+                    <div class="space-y-4 mb-8 bg-white/50 p-6 rounded-xl border border-bb-taupe/40">
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-location-dot text-bb-dark/70 mt-1"></i>
+                            <div>
+                                <h4 class="text-xs font-bold text-bb-dark uppercase tracking-wider">Alamat Studio</h4>
+                                <p class="text-xs text-bb-dark/80 mt-0.5">2-chome-14 Higashiyama, Meguro-ku, Tokyo 153-0043, Jepang.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3 pt-3 border-t border-bb-taupe/20">
+                            <i class="fas fa-calendar-check text-bb-dark/70 mt-1"></i>
+                            <div>
+                                <h4 class="text-xs font-bold text-bb-dark uppercase tracking-wider">Kebijakan Reservasi</h4>
+                                <p class="text-xs text-bb-dark/80 mt-0.5">Booking minimal H-2 (DP 30%). Reschedule gratis &lt; 24 jam sebelum jadwal kedatangan.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/6281371919705?text=Halo%20Blissbloom,%20saya%20ingin%20booking%20jadwal%20di%20Meguro%20Studio" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 bg-bb-pink hover:bg-bb-pink/80 text-bb-dark text-xs font-semibold rounded-full border border-bb-taupe transition">
+                        <i class="fas fa-map-pin"></i> Reservasi Kedatangan
+                    </a>
+                </div>
+
+                <!-- Visual Placeholder Card -->
+                <div class="relative rounded-2xl overflow-hidden shadow-lg border border-bb-taupe bg-bb-taupe/20 h-96 flex flex-col justify-end p-8 text-white">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                    <div class="relative z-10">
+                        <span class="text-xs tracking-widest uppercase bg-white/20 backdrop-blur-md px-3 py-1 rounded-full text-white/90">Meguro River View</span>
+                        <h3 class="font-serif text-2xl font-light mt-3">Serene & Minimalist Aesthetics</h3>
+                        <p class="text-xs text-white/70 mt-1">Pengalaman manicure paling privat dan elegan di Tokyo.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER & CONTACT ================= -->
+    <footer id="contact" class="bg-bb-dark text-white/90 pt-16 pb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+                
+                <!-- Brand Info -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-bb-pink flex items-center justify-center font-serif text-sm font-bold text-bb-dark">
+                            BB
+                        </div>
+                        <span class="font-serif text-lg tracking-wider font-semibold lowercase">blissbloom</span>
+                    </div>
+                    <p class="text-xs text-white/60 leading-relaxed">
+                        Japanese Minimalist Aesthetic & Vitamin-Infused Nail Polish Lab based in Meguro, Tokyo.
+                    </p>
+                    <p class="text-xs text-white/40">© 2026 BLISSBLOOM Beauty. All rights reserved.</p>
+                </div>
+
+                <!-- Contact Details -->
+                <div>
+                    <h4 class="font-serif text-base font-semibold mb-4 text-bb-pink">Hubungi Kami</h4>
+                    <ul class="space-y-3 text-xs text-white/70">
+                        <li>
+                            <a href="https://wa.me/6281371919705" target="_blank" class="hover:text-white transition flex items-center gap-2">
+                                <i class="fab fa-whatsapp text-sm"></i> +62 81371919705
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:dellyxxloufique@gmail.com" class="hover:text-white transition flex items-center gap-2">
+                                <i class="far fa-envelope text-sm"></i> dellyxxloufique@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.blissbloom-beauty.jp" target="_blank" class="hover:text-white transition flex items-center gap-2">
+                                <i class="fas fa-globe text-sm"></i> www.blissbloom-beauty.jp
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div>
+                    <h4 class="font-serif text-base font-semibold mb-4 text-bb-pink">Social Media</h4>
+                    <ul class="space-y-3 text-xs text-white/70">
+                        <li>
+                            <a href="https://instagram.com" target="_blank" class="hover:text-white transition flex items-center gap-2">
+                                <i class="fab fa-instagram text-sm"></i> @blissbloom.official
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com" target="_blank" class="hover:text-white transition flex items-center gap-2">
+                                <i class="fab fa-instagram text-sm"></i> @blissbloom.studio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://tiktok.com" target="_blank" class="hover:text-white transition flex items-center gap-2">
+                                <i class="fab fa-tiktok text-sm"></i> @blissbloom.beauty
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- E-Commerce Links -->
+                <div>
+                    <h4 class="font-serif text-base font-semibold mb-4 text-bb-pink">Official Store</h4>
+                    <div class="flex flex-wrap gap-2 text-xs">
+                        <span class="px-3 py-1.5 bg-white/10 rounded-lg text-white/80 border border-white/10">Shopee</span>
+                        <span class="px-3 py-1.5 bg-white/10 rounded-lg text-white/80 border border-white/10">Tokopedia</span>
+                        <span class="px-3 py-1.5 bg-white/10 rounded-lg text-white/80 border border-white/10">Lazada</span>
+                        <span class="px-3 py-1.5 bg-white/10 rounded-lg text-white/80 border border-white/10">Rakuten</span>
+                        <span class="px-3 py-1.5 bg-white/10 rounded-lg text-white/80 border border-white/10">Amazon</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pt-8 text-center text-xs text-white/40">
+                Crafted with elegance & Japanese perfection.
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Filter Catalogue Script
+        function filterCategory(category) {
+            const items = document.querySelectorAll('.product-item');
+            const buttons = document.querySelectorAll('.tab-btn');
+
+            // Style active button
+            buttons.forEach(btn => {
+                if (btn.getAttribute('data-category') === category) {
+                    btn.className = 'tab-btn px-5 py-2 text-xs font-medium rounded-full bg-bb-dark text-white transition';
+                } else {
+                    btn.className = 'tab-btn px-5 py-2 text-xs font-medium rounded-full bg-white/60 border border-bb-taupe text-bb-dark hover:bg-bb-pink/40 transition';
+                }
+            });
+
+            // Filter products
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.style.display = 'flex';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
